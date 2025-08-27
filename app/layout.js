@@ -1,9 +1,10 @@
-import { Orbitron } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import BackBtn from "@/componets/BackBtn";
+import SessionWrapper from "@/componets/SessionWrapper";
 
-const orbitron = Orbitron({
-  variable: "--font-orbitron",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["400", "600", "800"],
 });
@@ -18,8 +19,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <link rel="shortcut icon" href="/assets/fav.png" type="image" />
-      <body className={`${orbitron.variable} antialiased`}>{children}
-        <BackBtn/>
+      <body className={`${poppins.variable} antialiased`}>
+        <SessionWrapper>
+          {children}
+          <BackBtn />
+        </SessionWrapper>
       </body>
     </html>
   );

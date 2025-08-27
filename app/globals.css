@@ -1,34 +1,57 @@
 @import "tailwindcss";
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
   box-sizing: border-box;
-  font-family: var(--font-orbitron), Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+  
 }
 
-
-::-webkit-scrollbar {
-  width: 8px;              
+body::-webkit-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6;
 }
 
-::-webkit-scrollbar-track {
-  background: #0f172a;      
+body::-webkit-scrollbar-track {
+  background: #0f172a;
 }
 
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #3b82f6, #9333ea); 
+body::-webkit-scrollbar-thumb {
+  background: #3b82f6;
   border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #2563eb, #7e22ce); 
+.chat::-webkit-scrollbar {
+  width: 4px;
+  scrollbar-color: #d4d1d1;
 }
 
+.chat::-webkit-scrollbar-track {
+  background: #18181b;
+}
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #3b82f6 #0f172a; /* thumb color | track color */
+.chat::-webkit-scrollbar-thumb {
+  background: #d4d1d1;
+  border-radius: 4px;
+}
+
+.prompt::-webkit-scrollbar {
+  width: 4px;
+  scrollbar-color: #d4d1d1;
+}
+
+.prompt::-webkit-scrollbar-track {
+  background: #18181b;
+}
+
+.prompt::-webkit-scrollbar-thumb {
+  background: #d4d1d1;
+  border-radius: 4px;
+}
+
+.prompt {
+  field-sizing: content;
 }

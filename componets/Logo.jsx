@@ -11,6 +11,7 @@ const Logo = () => {
         height={70}
       />
       <h1 className="font-bold">Theta Ai</h1>
+     
     </div>
   );
 };

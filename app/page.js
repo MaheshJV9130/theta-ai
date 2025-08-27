@@ -28,10 +28,10 @@ export default function Home() {
     <>
       <Nav />
       <main>
-        <section className="h-screen flex bg-gradient-to-r from-black via-blue-900 to-purple-900">
-          <div className="w-1/2 text-white h-full flex justify-center gap-20 items-center text-center flex-col mx-auto">
+        <section className="h-screen  flex bg-gradient-to-r from-black via-blue-900 to-purple-900">
+          <div className="w-full lg:w-1/2 text-white h-full flex justify-center gap-5 lg:gap-20 items-center text-center flex-col mx-auto">
             <h1 className="text-6xl font-extrabold">Theta Ai</h1>
-            <p className="text-xl text-gray-300">
+            <p className="text-xl text-gray-300 px-2">
               Power in Silence - Experience instant AI responses, futuristic
               tools, and seamless performance. All free, all silent.
             </p>
@@ -40,7 +40,7 @@ export default function Home() {
               <BsRocketTakeoff size={30} /> Get Started
             </Link>
           </div>
-          <div className="w-1/2 h-full relative">
+          <div className="hidden lg:block w-1/2 h-full relative">
             <video
               className="absolute top-0 left-0 w-full h-full object-cover z-0"
               autoPlay
@@ -70,6 +70,7 @@ export default function Home() {
             ))}
           </div>
         </section>
+      
       </main>
     </>
   );
