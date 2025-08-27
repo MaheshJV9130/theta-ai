@@ -1,4 +1,5 @@
 import FeatureCard from "@/componets/FeatureCard";
+import Footer from "@/componets/Footer";
 import Logo from "@/componets/Logo";
 import Nav from "@/componets/Nav";
 import Link from "next/link";
@@ -72,6 +73,7 @@ export default function Home() {
         </section>
       
       </main>
+      <Footer/>
     </>
   );
 }
